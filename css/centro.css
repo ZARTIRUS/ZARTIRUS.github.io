@@ -1,0 +1,128 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 40px;
+  gap: 100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.experiencia-menu {
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: #e3e1e1;
+  word-break: break-all;
+  min-width: 4ch;
+  max-width: 4ch;
+}
+
+.experiencia-descricao {
+  font-size: 1.5rem;
+  max-width: 40ch;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.experiencia-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f9f5f5;
+  gap: 10px 20px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.experiencia-block::before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 4px;
+  background: greenyellow;
+  position: absolute;
+  left: -4px;
+  top: 18px;
+}
+
+.experiencia-ano {
+  position: absolute;
+  display: block;
+  margin-top: 22px;
+  margin-left: -100px;
+  width: 80px;
+  text-align: right;
+}
+
+.experiencia-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experiencia-links a {
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.block-organ span {
+  color: #838383;
+}
+
+strong {
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    padding: 50px;
+    margin: initial;
+  }
+}
+
+@media (max-width: 900px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    padding: 50px;
+    gap: 50px;
+  }
+  .experiencia-menu {
+    color: #141414;
+    word-break: normal;
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+  .experiencia-ano {
+    position: relative;
+    order: 1;
+    margin-left: 0px;
+    width: auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .experiencia {
+    padding: 30px;
+  }
+  .experiencia-descricao {
+    font-size: 1.2rem;
+  }
+  .experiencia-block {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .experiencia {
+    padding: 30px;
+  }
+  .experiencia-descricao {
+    font-size: 1.1rem;
+  }
+  .experiencia-menu {
+    font-size: 3rem;
+  }
+}

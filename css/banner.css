@@ -1,0 +1,40 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+  padding: 40px;
+}
+
+.banner-link {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-link a {
+  color: black;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .banner-link a {
+    display: block;
+    background-color: rgb(255, 253, 253);
+    padding: 10px 1rem;
+    border-radius: 4px;
+    border: 2px solid rgb(243, 243, 246);
+  }
+}
+
+@media (max-width: 450) {
+  .banner-link a {
+    font-size: 0.9rem;
+  }
+}
